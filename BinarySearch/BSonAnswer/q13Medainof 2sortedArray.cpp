@@ -1,10 +1,13 @@
+
+// using binary seacrh
+
 class Solution {
     public:
         double findMedianSortedArrays(vector<int>& arr1, vector<int>& arr2) {
             int n1=arr1.size();
             int n2=arr2.size();
             if(n1>n2)return findMedianSortedArrays(arr2,arr1); // pehle wala chhota array banao swap krke agar nhi h
-            int low=0,high=n1;
+            int low=0,high=n1; // range of arr1 in left half [0,n1] mean ya to left side mein arr1 minimum 0 element present honge aur maximum n1 
             int left=(n1+n2+1)/2;
             int n=n1+n2;
             // jitni mid1 ki value utne left mein elemnt of arr1 and arr1[mid1] is r1 and arr1[mid1-1] represent l1

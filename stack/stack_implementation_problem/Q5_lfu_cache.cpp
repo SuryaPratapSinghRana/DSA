@@ -20,8 +20,8 @@ public:
         keyVal[key].second++;
         freqList[keyVal[key].second].push_back(key);
         pos[key] = --freqList[keyVal[key].second].end();
-        if(freqList[minFreq].empty())
-            minFreq++;
+        if(freqList[minFreq].empty())  // ye future ke liye  h jab capacity full hogi to minfreqency wala ko replace kardo
+            minFreq++;        
         return keyVal[key].first;
     }
     

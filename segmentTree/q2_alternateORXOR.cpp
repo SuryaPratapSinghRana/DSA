@@ -22,6 +22,7 @@ void update(int ind,int low,int high,int i,int value,vector<int>&seg,int orxor){
     if(low==high)
     {
         seg[ind]=value;
+        return;
     }
     int mid=(low+high)/2;
     if(i<=mid)  // left mein jao wahi pe h ye i index wali range

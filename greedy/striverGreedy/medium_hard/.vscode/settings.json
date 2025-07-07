@@ -57,8 +57,7 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "iostream": "cpp",
-    "ostream": "cpp",
-    "q6_lazy_for_minrangeupdate": "cpp"
+    "random": "cpp",
+    "limits": "cpp"
   }
 }

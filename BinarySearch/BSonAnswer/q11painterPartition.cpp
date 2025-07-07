@@ -12,4 +12,4 @@ Explanation: We can divide the first 3 boards for one painter and the last board
 
 We can allocate the boards to the painters in several ways but it is clearly said in the question that we have to allocate the boards in such a way that the painters can paint all the boards in the minimum possible time. The painters will work simultaneously.
 
-// same code as book allocation
+// same code as book allocation q9
