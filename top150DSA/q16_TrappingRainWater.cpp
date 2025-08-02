@@ -36,3 +36,32 @@ public:
 
 //Approach 2 space O(1) t.c O(n)
 
+class Solution {
+public:
+    int trap(vector<int>& height) {
+      int r=height.size()-1;
+      int l=0,ans=0,leftmax=0,rightmax=0;
+      while(l<r)
+      {
+        if(leftmax<height[l])
+        {
+            leftmax=height[l];
+        }
+        if(rightmax<height[r])
+        {
+            rightmax=height[r];
+        }
+        if(leftmax<rightmax)
+        {
+            ans+=leftmax-height[l];
+            l++;
+        }
+        else
+        {
+            ans+=rightmax-height[r];
+            r--;
+        }
+      }
+      return ans;
+    }
+};
